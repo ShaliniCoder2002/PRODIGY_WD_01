@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+section {
+    padding: 100px 20px;
+    height: 100vh;
+}
+
+#home {
+    background-color: #f387c6;
+}
+
+#about {
+    background-color: #7e97ec;
+}
+
+#projects {
+    background-color: #fc7878;
+}
+
+#contact {
+    background-color: #6a45ed;
+}
+
+</style>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>Home Section</h1>
+        <p>This is the home section.</p>
+    </section>
+    <section id="about">
+        <h1>About Section</h1>
+        <p>This is the about section.</p>
+    </section>
+    <section id="projects">
+        <h1>Projects Section</h1>
+        <p>This is the projects section.</p>
+    </section>
+    <section id="contact">
+        <h1>Contact Section</h1>
+        <p>This is the contact section.</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
